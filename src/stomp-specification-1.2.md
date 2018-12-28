@@ -598,7 +598,7 @@ using `client` or `client-individual` acknowledgment. Any messages received
 from such a subscription will not be considered to have been consumed until
 the message has been acknowledged via an `ACK`.
 
-The `ACK` frame MUST include an `id` header matching the `ack` header of the
+The `ACK` frame MUST include an `id` header matching the `message-id` header of the
 `MESSAGE` being acknowledged. Optionally, a `transaction` header MAY be
 specified, indicating that the message acknowledgment SHOULD be part of the
 named transaction.
